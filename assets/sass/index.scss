@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+//color
+$primaryColor: #112031;
+$secondaryColor : #152D35;
+$thirdColor : #345B63;
+$fourColor : #f5faf7;
+$fiveColor : #e7f0e8;
+
+//style
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: $fourColor;
+    color: $primaryColor;
+}
+.navbar{
+    background-color: $primaryColor;
+    a{
+        font-weight: 700;
+        font-size: 2em;
+    }
+}
+.daftar-buku{
+    background-color: $fiveColor;
+    .title{
+        font-weight: 600;
+    }
+    .form-label{
+        font-weight: 500;
+    }
+}
+.wrapButton{
+    display: flex;
+    gap: 0.3em;
+}
+.cr{
+    font-size: 1em;
+    font-weight: 600;
+}
+.list-item{
+    background-color: $fourColor;
+}
+.inner{
+    color: $thirdColor;
+    h5{
+        font-weight: 600;
+    }
+}
+.btn-dark{
+    background-color: $primaryColor;
+    &:hover{
+        background-color: $secondaryColor;
+    }
+}
+.btn-danger{
+    background-color: #FF7878;
+    border: #FF7878;
+    &:hover{
+        background-color: darken(#FF7878, 5%);
+    }
+}
+.btn-success{
+    background-color: #00A19D;
+    border: #00A19D;
+    &:hover{
+        background-color: darken(#00A19D, 5%);
+    }
+}
+#checkboxList{
+    font-weight: 600;
+}
+@media only screen and (max-width : 767px){
+    .daftar-buku{
+        padding: 1rem!important;
+        padding-bottom: 2rem!important;
+    }
+    .wrapButton{
+        flex-direction: column;
+        align-items: center;
+    }
+    .px-5{
+        padding-left: 2rem!important;
+        padding-right: 2rem!important;
+    }
+    .list-item{
+        padding: 1rem!important;
+        gap: 1rem!important;
+        .inner{
+            flex-basis: 50%;
+        }
+        .item{
+            .btn{
+                padding: 0.4rem!important;
+            }
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+    }
+    .title{
+        text-align: center;
+    }
+}
