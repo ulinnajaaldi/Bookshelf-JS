@@ -138,7 +138,6 @@ function makeBook(bookObject) {
   return container;
 }
 
-//SelesaiDibaca
 function addBookToFinished(bookId) {
   const bookTarget = findBook(bookId);
 
