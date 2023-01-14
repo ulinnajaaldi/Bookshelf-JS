@@ -56,6 +56,13 @@ body{
         background-color: darken(#FF7878, 5%);
     }
 }
+.btn-secondary{
+    background-color: #FFC107;
+    border: #FFC107;
+    &:hover{
+        background-color: darken(#FFC107, 5%);
+    }
+}
 .btn-success{
     background-color: #00A19D;
     border: #00A19D;

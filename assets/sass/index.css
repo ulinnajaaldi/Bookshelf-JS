@@ -59,6 +59,14 @@ body {
   background-color: #ff5f5f;
 }
 
+.btn-secondary {
+  background-color: #FFC107;
+  border: #FFC107;
+}
+.btn-secondary:hover {
+  background-color: #edb100;
+}
+
 .btn-success {
   background-color: #00A19D;
   border: #00A19D;
